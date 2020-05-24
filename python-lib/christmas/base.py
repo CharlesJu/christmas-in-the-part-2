@@ -23,7 +23,7 @@ class SimpleBase(object):
                                  default='adafruit-hat', choices=['regular', 'adafruit-hat', 'adafruit-hat-pwm'],
                                  type=str)
         self.parser.add_argument("--led-slowdown-gpio", action="store",
-                                 help="Slow down writing to GPIO. Range: 0..4. Default: 1", default=1, type=int)
+                                 help="Slow down writing to GPIO. Range: 0..4. Default: 1", default=2, type=int)
         self.parser.add_argument("--led-pwm-lsb-nanoseconds", action="store",
                                  help="Base time-unit for the on-time in the lowest significant bit in nanoseconds. Default: 130",
                                  default=130, type=int)
